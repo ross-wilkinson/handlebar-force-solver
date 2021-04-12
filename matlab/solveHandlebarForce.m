@@ -1,17 +1,19 @@
 function [h1, h2] = solveHandlebarForce(A1,M,L10,L11,L12,L13,P1,P2)
 %SOLVEHANDLEBARFORCE This function solves vertical handlebar forces at the
-%left and right handlebar using the position of the pedals and handlebars
-%and the rider's vertical center of mass acceleration.
+%left and right handlebar during standing cycling using the origin and
+%magnitude of forces generated on the pedals, the rider's mass, and
+%vertical center of mass acceleration.
 %
 % Assumption(s):
-% 1. There were no forces on the saddle.
+% 1. There are no forces on the saddle.
 % 2. There is no thrust on the bicycle or rider's CoM. (Note: Thrust
 % decreases contact force on the rear wheel).
-% 3. Aerodynamic forces and rolling resistance were negligible. 
+% 3. Aerodynamic forces and rolling resistance are negligible. 
 % 4. Weight and inertia of the bicycle itself are neglected. 
 % 5. All lateral forces are ignored.
 % 6. No attempt to achieve moment equilibrium of the handlebar, brakes, and
 % front wheel assembly, which is free to rotate about the steering tube.
+% 7. Rider CoM positioned directly above rear-wheel contact.
 %
 % Inputs: 
 % - A1: vertical acceleration of rider's center of mass (m/s^2)
