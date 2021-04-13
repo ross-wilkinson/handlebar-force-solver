@@ -1,4 +1,6 @@
-# Estimating handlebar forces during standing cycling
+# handlebar-force-solver
+
+![MATLAB figure of model](./image_frontalPlane.png)
 
 ## Author
 
