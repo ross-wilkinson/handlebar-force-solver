@@ -1,5 +1,7 @@
 # handlebar-force-solver
 
+Example of how to solve handlebar forces during standing cycling using force and torque equilibrium equations.
+
 ![MATLAB figure of model](./image_frontalPlane.png)
 
 | Author(s) | Brief Description | Intended Uses and Known Limitations | Included Material | Updated |
